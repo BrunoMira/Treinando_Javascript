@@ -1,0 +1,39 @@
+body{
+    background: url("fundo-azul.jpg");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    min-height: 600px;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.relogio{
+   padding: 150px;
+    border: 20px solid white;
+    border-radius: 100%;
+    margin: auto;
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.ponteiro{
+
+    position: absolute;
+    width: 45%;
+    background: black;
+    top: 50%;
+    left: 5%;
+    height: 6px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: cubic-bezier(0.1, 2.7, 0.58, 1);
+    
+
+}
